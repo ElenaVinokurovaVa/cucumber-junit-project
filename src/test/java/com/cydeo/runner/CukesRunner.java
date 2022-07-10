@@ -9,12 +9,13 @@ import org.junit.runner.RunWith;
         plugin = {"html:target/cucumber-report.html",
                 "rerun:target/rerun.txt",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
+                "json:target/cucumber-report.json",
                 "pretty"},
         features = "src/test/resources/features", //copy path/reference(from content root) ->dif location
         glue = "com/cydeo/step_definitions",//copy path/reference(from source root) ->same location
         monochrome = true,
         dryRun = false,
-        tags = ""
+        tags = "@B26G12-54"
 
 )
 public class CukesRunner {

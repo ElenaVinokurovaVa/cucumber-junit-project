@@ -12,9 +12,10 @@ public class VyTrackHomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    @FindBy(xpath = "//span[@class='title title-level-1']")
-    public List<WebElement> allModules;
+    @FindBy(xpath = "//li[@class='dropdown dropdown-level-1']//span[contains(text(),'Fleet')]")
+    public WebElement fleetModul;
 
-    @FindBy(css = "#user-menu>a")
-    public WebElement username;
+    @FindBy(xpath = "//li[@class='dropdown-menu-single-item first']//span[text()='Vehicles']")
+    public WebElement vehicleFeature;
+
 }
