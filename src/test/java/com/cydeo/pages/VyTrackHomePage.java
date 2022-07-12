@@ -5,9 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 public class VyTrackHomePage {
+
     public VyTrackHomePage() {
         PageFactory.initElements(Driver.getDriver(), this);
     }
@@ -17,5 +16,4 @@ public class VyTrackHomePage {
 
     @FindBy(xpath = "//li[@class='dropdown-menu-single-item first']//span[text()='Vehicles']")
     public WebElement vehicleFeature;
-
 }

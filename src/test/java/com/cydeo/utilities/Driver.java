@@ -9,10 +9,8 @@ import org.openqa.selenium.safari.SafariDriver;
 import java.util.concurrent.TimeUnit;
 
 public class Driver {
-
     private Driver(){}
    // private static WebDriver driver;
-
     private static InheritableThreadLocal<WebDriver> driverPool = new InheritableThreadLocal<>();
 
     public static WebDriver getDriver(){
