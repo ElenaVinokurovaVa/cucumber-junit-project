@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         glue = "com/cydeo/step_definitions",//copy path/reference(from source root) ->same location
         monochrome = true,
         dryRun = false,
-        tags = "@B26G12-55"
+        tags = "@ev"
 
 )
 public class CukesRunner {
